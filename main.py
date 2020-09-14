@@ -16,37 +16,24 @@ def calc () :
     calc ()
   else :
     print("Error! You've entered something that we did not list. Please try again.")
+  sleep(1)
+  print("If you'd like another service, re-run the code or type their codes here. The codes are: Calc = calc (),the trivia is trivia (), the survey is quiz (), virus scan is vs (), and timer is timer ()")
 
-def temp () :
-  temp = input("Enter your current temperature. ")
-  if temp < "-10":
-    print("Yeaaah don't go out today.")
-  elif temp < "0":
-    print("Well if you go out, bring an warm, insulating coat.")
-  elif temp < "5":
-    print("It's a tad chilly, take a coat just in case.")
-  elif temp < "10":
-    print("It'll be slightly cold. Up to you whether you take a coat or not")
-  elif temp < "15":
-    print("You won't need a coat today.")
-  elif temp < "20":
-    print("Wear summer clothing today, it's quite warm")
-  elif temp < "30":
-    print("It'll be very hot, no need for a jacket or anything.")
-  elif temp > "30":
-    print("Brooo stay inside with your fan.")
-  else :
-    print("invalid temp.")
 def quiz ():
   print("Okay, thanks for taking our quiz. We have a few questions. ") 
   name = input("Enter your name. ")
   age = input("Enter your age, now, please. ")
   Subject = input("Okay, now your favourite subject. ")
-  print("Nice, thanks for that. So, if i was correct, your name is " + name + ", your age is " + age + ", and finally your favourite subject is " + Subject + "! I kinda like that subject too. Anyway, thanks for taking this quiz. If you need anything else, re-run the code.")
+  print("Nice, thanks for that. So, if i was correct, your name is " + name + ", your age is " + age + ", and finally your favourite subject is " + Subject + "! I kinda like that subject too. Anyway, thanks for taking this quiz.")
+  sleep(1)
+  print("If you'd like another service, re-run the code or type their codes here. The codes are: Calc = calc (),the trivia is trivia (), the survey is quiz (), virus scan is vs (), and timer is timer ()")
+
 def vs () :
   print("Okay, please standby while I scan your device for a virus. This    should take no longer than 20 seconds.")
   sleep(17)
   print("We have found no viruses on your computer. Happy internet browsing!")
+  sleep(1)
+  print("If you'd like another service, re-run the code or type their codes here. The codes are: Calc = calc (),the trivia is trivia (), the survey is quiz (), virus scan is vs (), and timer is timer ()")
 def trivia ():
   print("Hello! I am Trivia. I am going to quiz you on your general         knowledge! Please only use lowercase, as I am case sensitive. ")
   sleep(2)
@@ -72,7 +59,9 @@ def trivia ():
     print("Mhm. Correct. If you got 4/4, you got 100%, 3/4, 75, 2/4 is 50 and so on.")
   else :
     print("That's incorrect. It was Gangnam Style. If you got 4/4, you got 100%, 3/4, 75, 2/4 is 50 and so on.")
-  print("Thanks for playing. Need anything else? Re-run the code.")
+  print("Thanks for playing.")
+  sleep(1)
+  print("If you'd like another service, re-run the code or type their codes here. The codes are: Calc = calc (),the trivia is trivia (), the survey is quiz (), virus scan is vs (), and timer is timer ()")
 def timer () :
   timerlength = float(input("Enter how long you would like to have your timer for (in seconds.) "))
   print("Okay, your timer will begin in...")
@@ -86,6 +75,8 @@ def timer () :
   print("Started.")
   sleep(timerlength)
   print("Done!")
+  sleep(1)
+  print("If you'd like another service, re-run the code or type their codes here. The codes are: Calc = calc (),the trivia is trivia (), the survey is quiz (), virus scan is vs (), and timer is timer ()")
 setting = input("1=calc, 2=trivia, 3=survey, 4=virus scan, 5=timer! ")
 if setting == "1" :
   calc ()
